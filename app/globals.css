@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0f172a;
+
+  /* Paleta RankLocal — tecnologia + dados + Google + IA */
+  --brand-blue: #2563eb;       /* Google / confiança / dados */
+  --brand-blue-dark: #1d4ed8;
+  --brand-violet: #7c3aed;     /* IA / AI Visibility */
+  --brand-emerald: #059669;    /* crescimento / positivo */
+  --brand-amber: #d97706;      /* atenção / oportunidade */
+  --brand-red: #dc2626;        /* queda / erro */
+
+  --surface: #ffffff;
+  --surface-muted: #f1f5f9;
+  --border-subtle: #e2e8f0;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-blue-dark: var(--brand-blue-dark);
+  --color-brand-violet: var(--brand-violet);
+  --color-brand-emerald: var(--brand-emerald);
+  --color-brand-amber: var(--brand-amber);
+  --color-brand-red: var(--brand-red);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
